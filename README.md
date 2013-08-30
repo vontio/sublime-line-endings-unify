@@ -12,6 +12,7 @@ Unify line endings
 
 ## Usage :
 
+ - drag folder to sublime
  - use `cmd+shift+P` then `Line Endings Unify`
  - or bind some key in your user key binding:
 
@@ -21,5 +22,6 @@ Unify line endings
 	 "command": "line_endings_unify"
 	}
   ```
+ - input file extentions to process
 
  [0]: http://wbond.net/sublime_packages/package_control

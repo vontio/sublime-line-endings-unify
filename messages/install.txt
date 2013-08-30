@@ -1,0 +1,13 @@
+## Usage :
+
+ - drag folder to sublime
+ - use `cmd+shift+P` then `Line Endings Unify`
+ - or bind some key in your user key binding:
+
+  ```js
+    {
+	 "keys": ["ctrl+alt+shift+l"],
+	 "command": "line_endings_unify"
+	}
+  ```
+ - input file extentions to process
