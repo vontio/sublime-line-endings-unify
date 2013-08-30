@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Line Endings Unify",
+        "command": "line_endings_unify" 
+    }
+]
