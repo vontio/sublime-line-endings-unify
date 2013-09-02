@@ -1,14 +1,8 @@
 import sublime, sublime_plugin
-import os, glob
+import os
 
 handleExtensions = []
 
-def walkdirs(path,callback):
-	for currentFile in glob.glob( os.path.join(path, '*') ):
-		if os.path.isdir(currentFile):
-			walkdirs(currentFile,callback)
-		else:
-			callback(currentFile)
 def unifyLineEnding(file):
 	ext = os.path.splitext(file)[1]
 	if not (ext in handleExtensions):
@@ -27,7 +21,9 @@ def onInputExtensions(text):
 	handleExtensions = ['.' + x for x in handleExtensions]
 	folders = sublime.active_window().folders()
 	for folder in folders:
-		walkdirs(folder,unifyLineEnding)
+		for root,dirs,files in os.walk(folder):
+			for f in files:
+				unifyLineEnding(os.path.join(root,f))
 class LineEndingsUnifyCommand(sublime_plugin.WindowCommand):
 	def run(self):
 		folders = sublime.active_window().folders()

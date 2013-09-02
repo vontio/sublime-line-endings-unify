@@ -1,9 +1,12 @@
-## Usage :
+## Line Endings Unify
+
+change files endings (`Mac`,`Unix`,`Windows`) to `Unix` (aka `\n`).  (windows with sublime3 will be `Windows` (aka `\r\n`))
+
+## How to use:
 
  - drag folder to sublime
  - use `cmd+shift+P` then `Line Endings Unify`
  - or bind some key in your user key binding:
-
   ```js
     {
 	 "keys": ["ctrl+alt+shift+l"],
@@ -11,3 +14,6 @@
 	}
   ```
  - input file extentions to process
+ - done
+
+**always backup your data**
