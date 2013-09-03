@@ -13,7 +13,7 @@ change files endings (`Mac`,`Unix`,`Windows`) to `Unix` (aka `\n`).  (windows wi
 	 "command": "line_endings_unify"
 	}
   ```
- - input file extentions to process
+ - check file extentions to be handled
  - done
 
 **always backup your data**
